@@ -1,0 +1,17 @@
+{
+    "name": "snowgirl/test.usa.com",
+    "authors": [
+        {
+            "name": "alex.snowgirl",
+            "email": "alex.snowgirl@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "CORE\\": "core",
+        "APP\\": "app"
+      }
+    },
+    "require": {
+    }
+}

@@ -1,0 +1,101 @@
+body {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#app input[type="text"], #app input[type="file"], #app button {
+    padding: 8px 16px;
+    font-size: 16px;
+    -webkit-appearance: button;
+}
+
+#app form {
+    display: inline-block;
+}
+
+#app label {
+    display: block;
+    margin: 0 auto 5px auto;
+    text-align: left;
+}
+
+#app label span {
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+#app {
+    display: block;
+    min-height: 400px;
+    /*padding-top: 30px;*/
+    padding-bottom: 30px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#app.loading > * {
+    display: none;
+}
+
+#app.loading {
+    background: url(/media/loading.gif) center top no-repeat;
+}
+
+#app > * + * {
+    margin-top: 15px
+}
+
+#app.items .offers {
+    padding: 3px;
+    text-align: right;
+    width: 100%;
+}
+
+#app.items .offers tr > *:first-child {
+    text-align: center;
+}
+
+#app.items .offers tr > th:nth-child(2):after {
+    content: ', $'
+}
+
+#app.items .offers tr.active {
+    background-color: yellow;
+}
+
+#app.items .offers caption {
+    text-align: center;
+    font-weight: bold;
+}
+
+#app.items .list .item {
+    margin: 0 3px 3px 0;
+}
+
+#app.items .list .item:after {
+    content: '';
+    line-height: 1;
+    padding-left: 4px;
+    font-size: 16px;
+}
+
+#app.items .list .item.active:after {
+    content: '\2022'
+}
+
+#app.items .crawl:before {
+    content: '\25b6';
+    padding-right: 4px;
+}
+
+#app.items .output {
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+#app.items .output .price:before {
+    content: '$';
+}
